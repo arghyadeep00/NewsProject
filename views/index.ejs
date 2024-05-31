@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My news app</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark px-5 d-flex justify-content-between"
+    >
+      <div class="menues d-flex gap-3">
+        <a class="navbar-brand px-4" href="/">Home </a>
+        <a class="btn btn-primary" id="dropdownBtn">List Country</a>
+        <a class="btn btn-info navbar-brand px-4" href="#"> BitCoin News </a>
+      </div>
+      <div class="login-button d-flex gap-5">
+        <button class="btn btn-primary">Login</button>
+        <button class="btn btn-danger">Sign Up</button>
+      </div>
+    </nav>
+    <!-- dropdown section start -->
+    <div class="dropdown hide">
+      <ul class="d-flex gap-3 flex-column">
+        <li id="ar" onclick="clickFun(this)">Argentina</li>
+        <li id="au" onclick="clickFun(this)">Australia</li>
+        <li id="at" onclick="clickFun(this)">Austria</li>
+        <li id="be" onclick="clickFun(this)">Belgium</li>
+        <li id="br" onclick="clickFun(this)">Brazil</li>
+        <li id="bg" onclick="clickFun(this)">Bulgaria</li>
+      </ul>
+      <ul class="d-flex gap-3 flex-column">
+        <li id="ca" onclick="clickFun(this)">Canada</li>
+        <li id="cn" onclick="clickFun(this)">China</li>
+        <li id="co" onclick="clickFun(this)">Colombia</li>
+        <li id="cu" onclick="clickFun(this)">Cuba</li>
+        <li id="cz" onclick="clickFun(this)">Czech Republic</li>
+        <li id="eg" onclick="clickFun(this)">Egypt</li>
+      </ul>
+      <ul class="d-flex gap-3 flex-column">
+        <li id="fr" onclick="clickFun(this)">France</li>
+        <li id="de" onclick="clickFun(this)">Germany</li>
+        <li id="gr" onclick="clickFun(this)">Greece</li>
+        <li id="hk" onclick="clickFun(this)">Hong Kong</li>
+        <li id="hu" onclick="clickFun(this)">Hungary</li>
+        <li id="in" onclick="clickFun(this)">India</li>
+      </ul>
+      <ul class="d-flex gap-3 flex-column">
+        <li id="id" onclick="clickFun(this)">Indonesia</li>
+        <li id="ie" onclick="clickFun(this)">Ireland</li>
+        <li id="il" onclick="clickFun(this)">Israel</li>
+        <li id="it" onclick="clickFun(this)">Italy</li>
+        <li id="jp" onclick="clickFun(this)">Japan</li>
+        <li id="lv" onclick="clickFun(this)">Latvia</li>
+      </ul>
+      <ul class="d-flex gap-3 flex-column">
+        <li id="lt" onclick="clickFun(this)">Lithuania</li>
+        <li id="my" onclick="clickFun(this)">Malaysia</li>
+        <li id="mx" onclick="clickFun(this)">Mexico</li>
+        <li id="ma" onclick="clickFun(this)">Morocco</li>
+        <li id="nl" onclick="clickFun(this)">Netherlands</li>
+        <li id="nz" onclick="clickFun(this)">New Zealand</li>
+      </ul>
+      <ul class="d-flex gap-3 flex-column">
+        <li id="ng" onclick="clickFun(this)">Nigeria</li>
+        <li id="no" onclick="clickFun(this)">Norway</li>
+        <li id="ph" onclick="clickFun(this)">Philippines</li>
+        <li id="pl" onclick="clickFun(this)">Poland</li>
+        <li id="pt" onclick="clickFun(this)">Portugal</li>
+        <li id="ro" onclick="clickFun(this)">Romania</li>
+      </ul>
+
+      <ul class="d-flex gap-3 flex-column">
+        <li id="ru" onclick="clickFun(this)">Russia</li>
+        <li id="sa" onclick="clickFun(this)">Saudi Arabia</li>
+        <li id="rs" onclick="clickFun(this)">Serbia</li>
+        <li id="sg" onclick="clickFun(this)">Singapore</li>
+        <li id="sk" onclick="clickFun(this)">Slovakia</li>
+        <li id="si" onclick="clickFun(this)">Slovenia</li>
+      </ul>
+      <ul class="d-flex gap-3 flex-column">
+        <li id="za" onclick="clickFun(this)">South Africa</li>
+        <li id="kr" onclick="clickFun(this)">South Korea</li>
+        <li id="se" onclick="clickFun(this)">Sweden</li>
+        <li id="ch" onclick="clickFun(this)">Switzerland</li>
+        <li id="tw" onclick="clickFun(this)">Taiwan</li>
+        <li id="th" onclick="clickFun(this)">Thailand</li>
+      </ul>
+      <ul class="d-flex gap-3 flex-column">
+        <li id="tr" onclick="clickFun(this)">Turkey</li>
+        <li id="ae" onclick="clickFun(this)">UAE</li>
+        <li id="ua" onclick="clickFun(this)">Ukraine</li>
+        <li id="gb" onclick="clickFun(this)">United Kingdom</li>
+        <li id="us" onclick="clickFun(this)">United States</li>
+        <li id="ve" onclick="clickFun(this)">Venezuela</li>
+      </ul>
+    </div>
+
+    <!-- dropdown section end -->
+    <div class="container">
+      <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error
+        recusandae dolorem ut fugit et porro veniam quaerat? Aspernatur corporis
+        quis praesentium facere .............
+      </h3>
+      <hr />
+      <div class="d-flex justify-content-between">
+        <span><p>Some Latest News ----</p></span>
+        <span><p id="time"></p></span>
+      </div>
+      <div class="all-cards text-center">
+        <div class="row gap-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1617854818583-09e7f077a156?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Get more details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

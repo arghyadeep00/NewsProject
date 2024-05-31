@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(233, 230, 230);
+}
+.card {
+  width: 25rem;
+}
+nav {
+  color: white;
+}
+ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  margin: 3px 50px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  z-index: 100;
+  display: flex;
+  padding: 15px;
+}
+.hide {
+  display: none;
+}
+.news-section{
+  display: flex;
+  justify-content: center;
+}
