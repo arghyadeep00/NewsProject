@@ -26,6 +26,12 @@ app.get("/country", (req, res) => {
     })
     .catch((err) => console.log("Error Occure"));
 });
+app.get("/tesing",(req,res)=>{
+  // console.log(req);
+  const {country}=req.query;
+  console.log(country)
+  res.send("Fine")
+})
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>My news app</title>
   </head>
+
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark px-5 d-flex justify-content-between"
@@ -27,81 +28,200 @@
         <button class="btn btn-danger">Sign Up</button>
       </div>
     </nav>
+    <!-- <li><button type="submit" name="country" value=""></button></li> -->
     <!-- dropdown section start -->
     <div class="dropdown hide">
-      <ul class="d-flex gap-3 flex-column">
-        <li id="ar" onclick="clickFun(this)">Argentina</li>
-        <li id="au" onclick="clickFun(this)">Australia</li>
-        <li id="at" onclick="clickFun(this)">Austria</li>
-        <li id="be" onclick="clickFun(this)">Belgium</li>
-        <li id="br" onclick="clickFun(this)">Brazil</li>
-        <li id="bg" onclick="clickFun(this)">Bulgaria</li>
-      </ul>
-      <ul class="d-flex gap-3 flex-column">
-        <li id="ca" onclick="clickFun(this)">Canada</li>
-        <li id="cn" onclick="clickFun(this)">China</li>
-        <li id="co" onclick="clickFun(this)">Colombia</li>
-        <li id="cu" onclick="clickFun(this)">Cuba</li>
-        <li id="cz" onclick="clickFun(this)">Czech Republic</li>
-        <li id="eg" onclick="clickFun(this)">Egypt</li>
-      </ul>
-      <ul class="d-flex gap-3 flex-column">
-        <li id="fr" onclick="clickFun(this)">France</li>
-        <li id="de" onclick="clickFun(this)">Germany</li>
-        <li id="gr" onclick="clickFun(this)">Greece</li>
-        <li id="hk" onclick="clickFun(this)">Hong Kong</li>
-        <li id="hu" onclick="clickFun(this)">Hungary</li>
-        <li id="in" onclick="clickFun(this)">India</li>
-      </ul>
-      <ul class="d-flex gap-3 flex-column">
-        <li id="id" onclick="clickFun(this)">Indonesia</li>
-        <li id="ie" onclick="clickFun(this)">Ireland</li>
-        <li id="il" onclick="clickFun(this)">Israel</li>
-        <li id="it" onclick="clickFun(this)">Italy</li>
-        <li id="jp" onclick="clickFun(this)">Japan</li>
-        <li id="lv" onclick="clickFun(this)">Latvia</li>
-      </ul>
-      <ul class="d-flex gap-3 flex-column">
-        <li id="lt" onclick="clickFun(this)">Lithuania</li>
-        <li id="my" onclick="clickFun(this)">Malaysia</li>
-        <li id="mx" onclick="clickFun(this)">Mexico</li>
-        <li id="ma" onclick="clickFun(this)">Morocco</li>
-        <li id="nl" onclick="clickFun(this)">Netherlands</li>
-        <li id="nz" onclick="clickFun(this)">New Zealand</li>
-      </ul>
-      <ul class="d-flex gap-3 flex-column">
-        <li id="ng" onclick="clickFun(this)">Nigeria</li>
-        <li id="no" onclick="clickFun(this)">Norway</li>
-        <li id="ph" onclick="clickFun(this)">Philippines</li>
-        <li id="pl" onclick="clickFun(this)">Poland</li>
-        <li id="pt" onclick="clickFun(this)">Portugal</li>
-        <li id="ro" onclick="clickFun(this)">Romania</li>
-      </ul>
+      <form action="/tesing" method="get" class="form">
+        <ul class="d-flex">
+          <!-- <li id="ar">Argentina</li> -->
+          <li>
+            <button type="submit" name="country" value="ar">Argentina</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="au">Australia</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="at">Austria</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="be">Belgium</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="br">Brazil</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="bg">Bulgaria</button>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <button type="submit" name="country" value="ca">Canada</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="cn">China</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="co">Colombia</button>
+          </li>
+          <li><button type="submit" name="country" value="cu">Cuba</button></li>
+          <li>
+            <button type="submit" name="country" value="cz">
+              Czech Republic
+            </button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="eg">Egypt</button>
+          </li>
+        </ul>
 
-      <ul class="d-flex gap-3 flex-column">
-        <li id="ru" onclick="clickFun(this)">Russia</li>
-        <li id="sa" onclick="clickFun(this)">Saudi Arabia</li>
-        <li id="rs" onclick="clickFun(this)">Serbia</li>
-        <li id="sg" onclick="clickFun(this)">Singapore</li>
-        <li id="sk" onclick="clickFun(this)">Slovakia</li>
-        <li id="si" onclick="clickFun(this)">Slovenia</li>
-      </ul>
-      <ul class="d-flex gap-3 flex-column">
-        <li id="za" onclick="clickFun(this)">South Africa</li>
-        <li id="kr" onclick="clickFun(this)">South Korea</li>
-        <li id="se" onclick="clickFun(this)">Sweden</li>
-        <li id="ch" onclick="clickFun(this)">Switzerland</li>
-        <li id="tw" onclick="clickFun(this)">Taiwan</li>
-        <li id="th" onclick="clickFun(this)">Thailand</li>
-      </ul>
-      <ul class="d-flex gap-3 flex-column">
-        <li id="tr" onclick="clickFun(this)">Turkey</li>
-        <li id="ae" onclick="clickFun(this)">UAE</li>
-        <li id="ua" onclick="clickFun(this)">Ukraine</li>
-        <li id="gb" onclick="clickFun(this)">United Kingdom</li>
-        <li id="us" onclick="clickFun(this)">United States</li>
-        <li id="ve" onclick="clickFun(this)">Venezuela</li>
-      </ul>
+        <ul class="d-flex">
+          <li>
+            <button type="submit" name="country" value="fr">France</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="de">Germany</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="gr">Greece</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="hk">Hong Kong</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="hu">Hungary</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="in">India</button>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <button type="submit" name="country" value="id">Indonesia</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="ie">Ireland</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="il">Israel</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="it">Italy</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="jp">Japan</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="lv">Latvia</button>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <button type="submit" name="country" value="lt">Lithuania</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="my">Malaysia</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="mx">Mexico</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="ma">Morocco</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="nl">Netherlands</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="nz">New Zealand</button>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <button type="submit" name="country" value="ng">Nigeria</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="no">Norway</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="ph">Philippines</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="pl">Poland</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="pt">Portugal</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="ro">Romania</button>
+          </li>
+        </ul>
+
+        <ul class="d-flex">
+          <li>
+            <button type="submit" name="country" value="ru">Russia</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="sa">
+              Saudi Arabia
+            </button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="rs">Serbia</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="sg">Singapore</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="sk">Slovakia</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="si">Slovenia</button>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <button type="submit" name="country" value="za">
+              South Africa
+            </button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="kr">South Korea</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="se">Sweden</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="ch">Switzerland</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="tw">Taiwan</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="th">Thailand</button>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <button type="submit" name="country" value="tr">Turkey</button>
+          </li>
+          <li><button type="submit" name="country" value="ae">UAE</button></li>
+          <li>
+            <button type="submit" name="country" value="ua">Ukraine</button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="gb">
+              United Kingdom
+            </button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="us">
+              United States
+            </button>
+          </li>
+          <li>
+            <button type="submit" name="country" value="ve">Venezuela</button>
+          </li>
+        </ul>
+      </form>
     </div>
 
     <!-- dropdown section end -->
@@ -113,8 +233,12 @@
       </h3>
       <hr />
       <div class="d-flex justify-content-between">
-        <span><p>Some Latest News ----</p></span>
-        <span><p id="time"></p></span>
+        <span>
+          <p>Some Latest News ----</p>
+        </span>
+        <span>
+          <p id="time"></p>
+        </span>
       </div>
       <div class="all-cards text-center">
         <div class="row gap-4">
