@@ -20,6 +20,6 @@ function clickFun(e) {
   //   .catch((err) => {
   //     console.log("Error occure during send data to backend", err);
   //   });
-  window.location.replace(`/country?query=${e.id}`);
+  // window.location.replace(`/country?query=${e.id}`);
   dropdown.classList.toggle("hide");
 }

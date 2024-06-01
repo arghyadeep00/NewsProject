@@ -9,9 +9,13 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.render("index");
 });
-app.get("/country", (req, res) => {
-  const { query } = req.query;
-  const url = `https://newsapi.org/v2/top-headlines?country=${query}&apiKey=${process.env.API_KEY_AR200}`;
+// app.get("/country", (req, res) => {
+//   const { query } = req.query;
+  
+// });
+app.get("/query",(req,res)=>{
+  const {country}=req.query;
+  const url = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${process.env.API_KEY_AR200}`;
   fetch(url)
     .then((data) => data.json())
     .then((result) => {
@@ -25,12 +29,9 @@ app.get("/country", (req, res) => {
       res.render("country", { result });
     })
     .catch((err) => console.log("Error Occure"));
-});
-app.get("/tesing",(req,res)=>{
-  // console.log(req);
-  const {country}=req.query;
-  console.log(country)
-  res.send("Fine")
+
+  // console.log(country)
+  // res.send("Fine")
 })
 
 app.listen(PORT, () => {
